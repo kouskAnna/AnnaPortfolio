@@ -13,7 +13,7 @@ const GalleryContainer = styled.div`
 export default class ImageGrid extends Component {
   render() {
     return (
-      <GalleryContainer>
+      <GalleryContainer id="Projects">
         <Gallery photos={photos} margin={30} />;
       </GalleryContainer>
     );

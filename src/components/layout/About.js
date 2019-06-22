@@ -64,7 +64,7 @@ const AboutText = styled(Title)`
 class About extends Component {
   render() {
     return (
-      <Container>
+      <Container id="About">
         <TitleContainer>
           <Title>Anna Johnson</Title>
         </TitleContainer>

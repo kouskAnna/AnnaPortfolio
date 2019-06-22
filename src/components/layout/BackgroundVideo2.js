@@ -98,7 +98,7 @@ const SeeMyWorkButton = styled.button`
 
 function BackgroundVideo2() {
   return (
-    <VideoContainer>
+    <VideoContainer id="Home">
       <TitleTextContainer>
         <TitleTextLine1>
           <TitleText>Hi,</TitleText>

@@ -6,6 +6,7 @@ import About from "./About";
 import Nav from "./Nav";
 import ImageGrid from "./Projects2";
 import ScrollspyNav from "react-scrollspy-nav";
+import Scrollspy from "react-scrollspy";
 
 const Grid = styled.div`
   display: grid;
@@ -57,14 +58,35 @@ class GridLayout extends Component {
   render() {
     return (
       <Grid>
-        {/* <NavContainer>
+        <NavContainer>
           <NavContainerMiddle>
-            <ScrollspyNav
-              scrollTargetIds={["About", "Releases", "Contact"]}
-              activeNavClass="is-active"
-              scrollDuration="600"
+            <Scrollspy
+              items={["Home", "About", "Projects"]}
+              currentClassName="is-current"
             >
-              <Link href="#About">
+              <li>
+                <IconButton>
+                  <a href="#Home">
+                    <FaHome style={{ color: "blue" }} size="3em" />
+                  </a>
+                </IconButton>
+              </li>
+              <li>
+                <IconButton>
+                  <a href="#About">
+                    <FaUserAlt style={{ color: "blue" }} size="3em" />
+                  </a>
+                </IconButton>
+              </li>
+              <li>
+                <IconButton>
+                  <a href="#Projects">
+                    <FaProjectDiagram style={{ color: "blue" }} size="3em" />
+                  </a>
+                </IconButton>
+              </li>
+            </Scrollspy>
+            {/* <Link href="#About">
                 <IconButton>
                   <FaHome style={{ color: "blue" }} size="3em" />
                 </IconButton>
@@ -74,13 +96,12 @@ class GridLayout extends Component {
               </IconButton>
               <IconButton>
                 <FaProjectDiagram style={{ color: "blue" }} size="3em" />
-              </IconButton>
-            </ScrollspyNav>
+              </IconButton> */}
           </NavContainerMiddle>
-        </NavContainer> */}
-        <Nav />
+        </NavContainer>
+        {/* <Nav /> */}
         <Video />
-        <About id="About" />
+        <About />
         <ImageGrid />
       </Grid>
     );
