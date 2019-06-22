@@ -19,7 +19,7 @@ const StyledVideo = styled.video`
 const TitleTextContainer = styled.div`
   grid-area: 2 / 2 / 3 / -1;
   border: dashed 1px yellow;
-  width: 300px;
+  width: 400px;
   margin-right: 60px;
   display: grid;
   align-self: center;

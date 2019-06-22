@@ -3,10 +3,8 @@ import styled from "styled-components";
 import Video from "./BackgroundVideo2";
 import { FaUserAlt, FaHome, FaProjectDiagram } from "react-icons/fa";
 import About from "./About";
-import Nav from "./Nav";
 import ImageGrid from "./Projects2";
 import ScrollspyNav from "react-scrollspy-nav";
-import Scrollspy from "react-scrollspy";
 
 const Grid = styled.div`
   display: grid;
@@ -22,8 +20,8 @@ const NavContainer = styled.div`
   grid: 100vh / 1fr;
   z-index: 1;
   position: fixed;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 10px;
+  padding-right: 14px;
 `;
 
 const NavContainerMiddle = styled.div`
@@ -32,7 +30,7 @@ const NavContainerMiddle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  border: dashed 1px green;
+  /* border: dashed 1px green; */
 `;
 
 const IconButton = styled.button`
@@ -41,10 +39,6 @@ const IconButton = styled.button`
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-`;
-
-const IconContainer = styled.div`
-  z-index: 2;
 `;
 
 const Link = styled.a`
@@ -60,9 +54,10 @@ class GridLayout extends Component {
       <Grid>
         <NavContainer>
           <NavContainerMiddle>
-            <Scrollspy
-              items={["Home", "About", "Projects"]}
-              currentClassName="is-current"
+            <ScrollspyNav
+              scrollTargetIds={["Home", "About", "Projects"]}
+              activeNavClass="is-active"
+              scrollDuration="600"
             >
               <li>
                 <IconButton>
@@ -85,21 +80,9 @@ class GridLayout extends Component {
                   </a>
                 </IconButton>
               </li>
-            </Scrollspy>
-            {/* <Link href="#About">
-                <IconButton>
-                  <FaHome style={{ color: "blue" }} size="3em" />
-                </IconButton>
-              </Link>
-              <IconButton>
-                <FaUserAlt style={{ color: "blue" }} size="3em" />
-              </IconButton>
-              <IconButton>
-                <FaProjectDiagram style={{ color: "blue" }} size="3em" />
-              </IconButton> */}
+            </ScrollspyNav>
           </NavContainerMiddle>
         </NavContainer>
-        {/* <Nav /> */}
         <Video />
         <About />
         <ImageGrid />
