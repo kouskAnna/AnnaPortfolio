@@ -10,6 +10,7 @@
     "react-photo-gallery": "^7.0.2",
     "react-scripts": "3.0.1",
     "react-scrollspy": "^3.4.0",
+    "react-scrollspy-nav": "^1.2.1",
     "react-social-icons": "^4.1.0",
     "styled-components": "^4.3.1",
     "styled-media-query": "^2.1.2",

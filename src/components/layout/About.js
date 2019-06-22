@@ -5,6 +5,8 @@ import { Parallax } from "react-parallax";
 // import media from "styled-media-query";
 // import { purple } from "../utilities/Colors";
 import styled from "styled-components";
+import media from "styled-media-query";
+
 // import { Title } from "../elements";
 
 const Image1 = "https://annaportfoliopictures.s3.amazonaws.com/BlackTech4.jpg";
@@ -26,9 +28,31 @@ const ParallaxContainer = styled.div`
 
 const TitleContainer = styled.div`
   grid-area: 1 / 1 / 2 / -1;
-  /* border: dashed 1px yellow; */
+  border: dashed 1px yellow;
   display: flex;
   justify-content: center;
+  ${media.lessThan("medium")`
+  /* screen width is less than 768px (medium) */
+  /* grid-area: 2 / 1 / 3 / 2; */
+  /* margin-right: 0px; */
+  font-size: 2em;
+  
+  
+  `}
+  
+  ${media.between("medium", "large")`
+  /* screen width is between 768px (medium) and 1170px (large) */
+  /* margin-right: 60px; */
+  /* grid-area: 2 / 1 / 3 / 2; */
+  font-size: 2em;
+
+  `}
+
+  ${media.greaterThan("large")`
+    /* screen width is greater than 1170px (large) */
+
+
+  `}
 `;
 
 export const Title = styled.h3`
@@ -41,12 +65,34 @@ export const Title = styled.h3`
   align-self: center;
   /* justify-self: center; */
   /* padding-top: 20px; */
+  ${media.lessThan("medium")`
+  /* screen width is less than 768px (medium) */
+  /* grid-area: 2 / 1 / 3 / 2; */
+  /* margin-right: 0px; */
+  font-size: 2em;
+  
+  
+  `}
+  
+  ${media.between("medium", "large")`
+  /* screen width is between 768px (medium) and 1170px (large) */
+  /* margin-right: 60px; */
+  /* grid-area: 2 / 1 / 3 / 2; */
+  font-size: 2em;
+
+  `}
+
+  ${media.greaterThan("large")`
+    /* screen width is greater than 1170px (large) */
+
+
+  `}
 `;
 
 const AboutContainer = styled.div`
   grid-area: 2 / 1 / 3 / -1;
-  /* border: dashed 1px red; */
-  width: 800px;
+  border: dashed 1px red;
+  /* width: 800px; */
   display: flex;
   justify-self: center;
   align-self: center;
@@ -59,6 +105,28 @@ const AboutText = styled(Title)`
   text-align: center;
   line-height: 50px;
   /* padding-top: 20px; */
+  ${media.lessThan("medium")`
+  /* screen width is less than 768px (medium) */
+  /* grid-area: 2 / 1 / 3 / 2; */
+  /* margin-right: 0px; */
+  font-size: 1em;
+  
+  
+  `}
+  
+  ${media.between("medium", "large")`
+  /* screen width is between 768px (medium) and 1170px (large) */
+  /* margin-right: 60px; */
+  /* grid-area: 2 / 1 / 3 / 2; */
+  font-size: 1em;
+
+  `}
+
+  ${media.greaterThan("large")`
+    /* screen width is greater than 1170px (large) */
+
+
+  `}
 `;
 
 class About extends Component {
