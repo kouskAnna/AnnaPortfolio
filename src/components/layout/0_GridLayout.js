@@ -3,18 +3,18 @@ import styled from "styled-components";
 import Video from "./BackgroundVideo2";
 import { FaUserAlt, FaHome, FaProjectDiagram } from "react-icons/fa";
 import About from "./About";
-import ImageGrid from "./Projects2";
+import ImageGrid from "./Projects";
 import ScrollspyNav from "react-scrollspy-nav";
 
 const Grid = styled.div`
   display: grid;
   height: 100vh;
-  grid-template: 100vh 700px 3400px / 75px 1fr;
+  grid-template: 100vh 550px 1fr / 75px 1fr;
 `;
 
 const NavContainer = styled.div`
   grid-area: 1 / 1 / 2 / 2;
-  border: dashed 1px red;
+  /* border: dashed 1px red; */
   background-color: black;
   display: flex;
   align-content: center;
