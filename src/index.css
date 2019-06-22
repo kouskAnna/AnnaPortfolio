@@ -1,0 +1,30 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+@font-face {
+  font-family: "Holiday Home";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Holiday Home"),
+    url("./components/css/fonts/Holiday_Home.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Harrington";
+  src: local("Harrington"),
+    url("./components/css/fonts/Harrington.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
