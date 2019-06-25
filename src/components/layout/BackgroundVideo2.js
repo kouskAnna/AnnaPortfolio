@@ -26,22 +26,14 @@ const TitleTextContainer = styled.div`
   grid: 70px 70px 70px 70px / 1fr;
   ${media.lessThan("medium")`
   /* screen width is less than 768px (medium) */
-  /* grid-area: 2 / 1 / 3 / 2; */
-  /* margin-right: 0px; */
-  
-  
   `}
   
   ${media.between("medium", "large")`
   /* screen width is between 768px (medium) and 1170px (large) */
-  /* margin-right: 60px; */
-  /* grid-area: 2 / 1 / 3 / 2; */
   `}
 
   ${media.greaterThan("large")`
     /* screen width is greater than 1170px (large) */
-
-
   `}
 `;
 
@@ -66,20 +58,18 @@ const TitleText = styled.h3`
   font-size: 2.8em;
   ${media.lessThan("medium")`
     /* screen width is less than 768px (medium) */
-    font-size: 2em;
+    font-size: 2.5em;
 
   `}
 
   ${media.between("medium", "large")`
     /* screen width is between 768px (medium) and 1170px (large) */
-    font-size: 1.8em;
+    font-size: 2.5em;
     overflow: hidden;
   `}
 
   ${media.greaterThan("large")`
     /* screen width is greater than 1170px (large) */
-
-
   `}
 `;
 
@@ -110,7 +100,9 @@ function BackgroundVideo2() {
           <TitleText>UI/UX Designer</TitleText>
         </TitleTextLine3>
         <TitleTextLine4>
-          <SeeMyWorkButton>See My Work</SeeMyWorkButton>
+          <a href="#Projects">
+            <SeeMyWorkButton>See My Work</SeeMyWorkButton>
+          </a>
         </TitleTextLine4>
       </TitleTextContainer>
       <StyledVideo

@@ -6,15 +6,22 @@ import { photos } from "./photos";
 const GalleryContainer = styled.div`
   grid-area: 3 / 2 / -1 / -1;
   background-color: black;
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px; */
+  /* padding-right: 50px; */
 `;
 
 export default class ImageGrid extends Component {
+  click = e => {
+    console.log("I got clicked", e.target.alt);
+    const varb = e.target.alt;
+    // console.log("varb", varb);j
+    window.location.href = varb;
+  };
+
   render() {
     return (
       <GalleryContainer id="Projects">
-        <Gallery photos={photos} margin={30} />;
+        <Gallery photos={photos} margin={30} onClick={this.click} />;
       </GalleryContainer>
     );
   }
