@@ -21,7 +21,7 @@ export default class ImageGrid extends Component {
   render() {
     return (
       <GalleryContainer id="Projects">
-        <Gallery photos={photos} margin={30} onClick={this.click} />;
+        <Gallery photos={photos} margin={10} onClick={this.click} />;
       </GalleryContainer>
     );
   }
