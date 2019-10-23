@@ -14,7 +14,7 @@ export default class ImageGrid extends Component {
   click = e => {
     console.log("I got clicked", e.target.alt);
     const varb = e.target.alt;
-    // console.log("varb", varb);j
+    // console.log("varb", varb);
     window.location.href = varb;
   };
 

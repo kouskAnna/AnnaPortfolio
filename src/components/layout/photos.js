@@ -1,5 +1,38 @@
 export const photos = [
   {
+    src:
+      "https://annaportfoliopictures.s3.amazonaws.com/SwordStone_HeartBeat_Crop2.jpg",
+    width: 1,
+    height: 1.1,
+    alt: "https://kousk.bandcamp.com/music"
+  },
+  {
+    src: "https://annaportfoliopictures.s3.amazonaws.com/LogMushDre.jpg",
+    width: 1,
+    height: 1.1,
+    alt: "https://youtu.be/ChNAiHvxRqg"
+  },
+  {
+    src: "https://annaportfoliopictures.s3.amazonaws.com/LilMushroom_Tek.jpg",
+    width: 1,
+    height: 1.1,
+    alt: "https://youtu.be/e9Nj9dG9VjQ"
+  },
+  {
+    src:
+      "https://annaportfoliopictures.s3.amazonaws.com/GreenMushForestAssange2.jpg",
+    width: 2,
+    height: 1,
+    alt:
+      "https://www.deviantart.com/kouskmusic/art/Assange-Forest-Spirit-817751420?ga_submit_new=10%3A1571793187"
+  },
+  {
+    src: "https://annaportfoliopictures.s3.amazonaws.com/BigMushTekBFLY.jpg",
+    width: 1,
+    height: 1.1,
+    alt: "https://youtu.be/3oFbT5Ux8zM"
+  },
+  {
     src: "https://annaportfoliopictures.s3.amazonaws.com/MoriaCave.jpg",
     width: 4927,
     height: 1500,
@@ -56,12 +89,12 @@ export const photos = [
     width: 4,
     height: 2
   },
-  {
-    src: "https://annaportfoliopictures.s3.amazonaws.com/FreeAssange_Song.jpg",
-    width: 4,
-    height: 2,
-    alt: "https://youtu.be/55VEpNEoDMM"
-  },
+  // {
+  //   src: "https://annaportfoliopictures.s3.amazonaws.com/FreeAssange_Song.jpg",
+  //   width: 4,
+  //   height: 2,
+  //   alt: "https://youtu.be/55VEpNEoDMM"
+  // },
   {
     src: "https://annaportfoliopictures.s3.amazonaws.com/TrueMoon.jpg",
     width: 1.1,
