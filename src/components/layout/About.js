@@ -1,24 +1,14 @@
 import React, { Component } from "react";
 import { Parallax } from "react-parallax";
-// import Image1 from "../images/BlackTech4.jpg";
-// import styled, { css } from "styled-components";
-// import media from "styled-media-query";
-// import { purple } from "../utilities/Colors";
 import styled from "styled-components";
 import media from "styled-media-query";
-
-// import { Title } from "../elements";
 
 const Image1 = "https://annaportfoliopictures.s3.amazonaws.com/BlackTech4.jpg";
 
 const Container = styled.div`
   grid-area: 2 / 2 / 3 / -1;
-  /* background-image: url("https://annaportfoliopictures.s3.amazonaws.com/BlackTech4.jpg"); */
   display: grid;
   grid: 1fr 4fr / 1fr;
-  /* width: 100%; */
-  /* height: 100%; */
-  /* border: dashed 1px red; */
 `;
 
 const ParallaxContainer = styled.div`
@@ -31,23 +21,8 @@ const TitleContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: dashed 1px yellow; */
   padding-top: 20px;
   padding-bottom: 20px;
-  /* justify-self: center; */
-  ${media.lessThan("medium")`
-  /* screen width is less than 768px (medium) */
-  `}
-  
-  ${media.between("medium", "large")`
-  /* screen width is between 768px (medium) and 1170px (large) */
-  /* font-size: 2em; */
-
-  `}
-
-  ${media.greaterThan("large")`
-    /* screen width is greater than 1170px (large) */
-  `}
 `;
 
 export const Title = styled.h3`
@@ -57,17 +32,11 @@ export const Title = styled.h3`
   color: blue;
   text-shadow: 1px 1px 3px purple;
   ${media.lessThan("medium")`
-  /* screen width is less than 768px (medium) */
   font-size: 2.5em;
   `}
-  
-  ${media.between("medium", "large")`
-  /* screen width is between 768px (medium) and 1170px (large) */
-  font-size: 3.5em;
-  `}
 
-  ${media.greaterThan("large")`
-    /* screen width is greater than 1170px (large) */
+  ${media.between("medium", "large")`
+  font-size: 3.5em;
   `}
 `;
 
@@ -77,7 +46,6 @@ const AboutContainer = styled.div`
   align-items: center;
   justify-self: center;
   width: 80%;
-  /* border: dashed 1px red; */
 `;
 
 const AboutText = styled(Title)`
@@ -89,18 +57,12 @@ const AboutText = styled(Title)`
   color: white;
   text-shadow: 1px 1px blue;
   ${media.lessThan("medium")`
-  /* screen width is less than 768px (medium) */
   font-size: 1.1em;
   `}
-  
+
   ${media.between("medium", "large")`
-  /* screen width is between 768px (medium) and 1170px (large) */
   font-size: 1.5em;
 
-  `}
-
-  ${media.greaterThan("large")`
-    /* screen width is greater than 1170px (large) */
   `}
 `;
 

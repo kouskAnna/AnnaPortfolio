@@ -6,7 +6,6 @@ const VideoContainer = styled.div`
   grid-area: 1 / 2 / 2 / -1;
   display: grid;
   grid: 1fr 1fr 1fr / 2fr 1fr;
-  /* border: dashed 1px green; */
 `;
 
 const StyledVideo = styled.video`
@@ -19,23 +18,10 @@ const StyledVideo = styled.video`
 
 const TitleTextContainer = styled.div`
   grid-area: 2 / 2 / 3 / -1;
-  /* border: dashed 1px yellow; */
-  /* width: 400px; */
   margin-right: 60px;
   display: grid;
   align-self: center;
   grid: 70px 70px 100px 70px / 1fr;
-  ${media.lessThan("medium")`
-  /* screen width is less than 768px (medium) */
-  `}
-  
-  ${media.between("medium", "large")`
-  /* screen width is between 768px (medium) and 1170px (large) */
-  `}
-
-  ${media.greaterThan("large")`
-    /* screen width is greater than 1170px (large) */
-  `}
 `;
 
 const TitleTextLine1 = styled.div`
@@ -52,29 +38,20 @@ const TitleTextLine3 = styled(TitleTextLine1)`
 `;
 const TitleTextLine4 = styled(TitleTextLine1)`
   grid-area: 4 / 1 / 5 / -1;
-  /* border: dashed 1px green; */
-  /* margin-top: 14px; */
 `;
 
 const TitleText = styled.h3`
   font-family: "Harrington";
   color: white;
   font-size: 2.8em;
-  /* justify-content: center; */
   ${media.lessThan("medium")`
-    /* screen width is less than 768px (medium) */
     font-size: 2.5em;
 
   `}
 
   ${media.between("medium", "large")`
-    /* screen width is between 768px (medium) and 1170px (large) */
     font-size: 2.5em;
     overflow: hidden;
-  `}
-
-  ${media.greaterThan("large")`
-    /* screen width is greater than 1170px (large) */
   `}
 `;
 
@@ -89,7 +66,6 @@ const SeeMyWorkButton = styled.button`
   border-radius: 10px;
   border: solid 4px blue;
   width: 200px;
-  /* margin-top: 40px; */
 `;
 
 function BackgroundVideo2() {

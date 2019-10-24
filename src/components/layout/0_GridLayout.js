@@ -14,12 +14,10 @@ const Grid = styled.div`
 
 const NavContainer = styled.div`
   grid-area: 1 / 1 / 2 / 2;
-  /* border: dashed 1px red; */
   background-color: black;
   display: flex;
   align-content: center;
   justify-content: center;
-  /* grid: 100vh / 1fr; */
   height: 100%;
   width: 75px;
   z-index: 1;
@@ -40,7 +38,6 @@ const IconButtonContainer = styled.div`
   height: 100%;
   width: 100%;
   justify-content: center;
-  /* border: dashed 1px green; */
 `;
 
 class GridLayout extends Component {
