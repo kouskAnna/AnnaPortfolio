@@ -6,7 +6,7 @@ const VideoContainer = styled.div`
   grid-area: 1 / 2 / 2 / -1;
   display: grid;
   grid: 1fr 1fr 1fr / 2fr 1fr;
-  border: dashed 1px green;
+  /* border: dashed 1px green; */
 `;
 
 const StyledVideo = styled.video`

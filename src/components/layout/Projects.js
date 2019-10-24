@@ -6,7 +6,7 @@ import { photos } from "./photos";
 const GalleryContainer = styled.div`
   grid-area: 3 / 2 / 4 / -1;
   background-color: black;
-  border: dashed 1px yellow;
+  /* border: dashed 1px yellow; */
   /* padding-left: 50px; */
   /* padding-right: 50px; */
 `;

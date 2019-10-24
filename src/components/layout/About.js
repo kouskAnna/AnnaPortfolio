@@ -55,7 +55,7 @@ export const Title = styled.h3`
   font-size: 4em;
   z-index: 1;
   color: blue;
-  text-shadow: 1px 1px 3px turquoise;
+  text-shadow: 1px 1px 3px purple;
   ${media.lessThan("medium")`
   /* screen width is less than 768px (medium) */
   font-size: 3.5em;
@@ -77,19 +77,20 @@ const AboutContainer = styled.div`
   align-items: center;
   justify-self: center;
   width: 80%;
-  border: dashed 1px red;
+  /* border: dashed 1px red; */
 `;
 
 const AboutText = styled(Title)`
   text-shadow: 0px 0px blue;
   font-size: 1.7em;
+  font-family: "Papyrus";
   text-align: center;
   line-height: 50px;
   color: white;
   text-shadow: 1px 1px blue;
   ${media.lessThan("medium")`
   /* screen width is less than 768px (medium) */
-  font-size: 1em;
+  font-size: 1.1em;
   `}
   
   ${media.between("medium", "large")`
