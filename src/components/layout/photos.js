@@ -89,12 +89,12 @@ export const photos = [
     width: 4,
     height: 2
   },
-  // {
-  //   src: "https://annaportfoliopictures.s3.amazonaws.com/FreeAssange_Song.jpg",
-  //   width: 4,
-  //   height: 2,
-  //   alt: "https://youtu.be/55VEpNEoDMM"
-  // },
+  {
+    src: "https://annaportfoliopictures.s3.amazonaws.com/FreeAssange_Song.jpg",
+    width: 4,
+    height: 2,
+    alt: "https://youtu.be/55VEpNEoDMM"
+  },
   {
     src: "https://annaportfoliopictures.s3.amazonaws.com/TrueMoon.jpg",
     width: 1.1,

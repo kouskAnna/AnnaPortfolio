@@ -33,6 +33,7 @@ const TitleContainer = styled.div`
   align-items: center;
   /* border: dashed 1px yellow; */
   padding-top: 20px;
+  padding-bottom: 20px;
   /* justify-self: center; */
   ${media.lessThan("medium")`
   /* screen width is less than 768px (medium) */
@@ -75,7 +76,8 @@ const AboutContainer = styled.div`
   display: flex;
   align-items: center;
   justify-self: center;
-  width: 70%;
+  width: 80%;
+  border: dashed 1px red;
 `;
 
 const AboutText = styled(Title)`
@@ -87,7 +89,7 @@ const AboutText = styled(Title)`
   text-shadow: 1px 1px blue;
   ${media.lessThan("medium")`
   /* screen width is less than 768px (medium) */
-  font-size: 1.3em;
+  font-size: 1em;
   `}
   
   ${media.between("medium", "large")`

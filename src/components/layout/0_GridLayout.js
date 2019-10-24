@@ -9,7 +9,7 @@ import ScrollspyNav from "react-scrollspy-nav";
 const Grid = styled.div`
   display: grid;
   height: 100vh;
-  grid-template: 100vh 550px 1fr / 75px 1fr;
+  grid-template: 100vh 700px 1fr / 75px 1fr;
 `;
 
 const NavContainer = styled.div`

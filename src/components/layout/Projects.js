@@ -4,8 +4,9 @@ import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
 
 const GalleryContainer = styled.div`
-  grid-area: 3 / 2 / -1 / -1;
+  grid-area: 3 / 2 / 4 / -1;
   background-color: black;
+  border: dashed 1px yellow;
   /* padding-left: 50px; */
   /* padding-right: 50px; */
 `;
@@ -21,7 +22,7 @@ export default class ImageGrid extends Component {
   render() {
     return (
       <GalleryContainer id="Projects">
-        <Gallery photos={photos} margin={10} onClick={this.click} />;
+        <Gallery photos={photos} margin={4} onClick={this.click} />;
       </GalleryContainer>
     );
   }
