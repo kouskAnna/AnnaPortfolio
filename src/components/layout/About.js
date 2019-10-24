@@ -58,7 +58,7 @@ export const Title = styled.h3`
   text-shadow: 1px 1px 3px purple;
   ${media.lessThan("medium")`
   /* screen width is less than 768px (medium) */
-  font-size: 3.5em;
+  font-size: 2.5em;
   `}
   
   ${media.between("medium", "large")`
